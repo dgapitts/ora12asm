@@ -1,6 +1,6 @@
 # project ora12asm
 
-This project is similar to my ora12base project (https://github.com/dgapitts/ora12base/blob/master/README.md) , but instead of using the opscode_centos-6.6_chef-provisionerless.box image; I have borrow some of the Vagrantfile and Rakefile from hajee's project  https://github.com/hajee/vagrant-centos-5.10-ora12-rac, plus virtualbox image.
+This project is similar to my ora12base project (https://github.com/dgapitts/ora12base) , but instead of using the opscode_centos-6.6_chef-provisionerless.box image; I have borrow some of the Vagrantfile and Rakefile from hajee's project  https://github.com/hajee/vagrant-centos-5.10-ora12-rac, plus virtualbox image.
 
 I did concider forking hajee's project but what I'm doing is pretty different. The main thing I have borrowed from this project is the way hajee has automated setting up a disc array.
 
