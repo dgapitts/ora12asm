@@ -1,0 +1,6 @@
++ASM.__oracle_base='/u01/grid'#ORACLE_BASE set from in memory value
+*.asm_diskstring='ORCL:*'
+*.asm_power_limit=1
+*.large_pool_size=12M
+*.SGA_MAX_SIZE=400M
+*.remote_login_passwordfile='EXCLUSIVE'
