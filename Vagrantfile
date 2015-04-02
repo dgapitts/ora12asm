@@ -28,10 +28,22 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
       vb.customize ["modifyvm", :id, "--nic3", "intnet"]
     end
 
-    dbasm.vm.network :private_network, ip: "172.16.99.20"
+    dbasm.vm.network :private_network, ip: "172.16.10.20"
+    #dbasm.vm.network "public_network", ip: "192.168.0.27"
     dbasm.vm.network :forwarded_port, guest: 22, host: 1234
+    #precise32.vm.network :hostonly, "192.168.1.27"    
+    dbasm.ssh.forward_agent = true
+    dbasm.ssh.forward_x11 = true
+
 
     dbasm.vm.provision :shell, :path => "provision.sh"
 
   end
+
+
+
+
+  
+
+
 end

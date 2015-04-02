@@ -26,11 +26,11 @@ task :up        => ['up:dbasm']
 desc  "Provision both nodes"
 task :provision        => ['provision:dbasm']
 
-VDI_FILES = (1..7).collect {|i| "ssdisk#{i}.vdi"}
+VDI_FILES = (1..9).collect {|i| "ssdisk#{i}.vdi"}
 
 
 rule /\.vdi$/ do |vdi|
-  sh "vboxmanage createhd --filename #{vdi} --size 4096 --variant Fixed"
+  sh "vboxmanage createhd --filename #{vdi} --size 2048 --variant Fixed"
 end
 
 

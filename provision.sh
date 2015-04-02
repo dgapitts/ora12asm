@@ -8,14 +8,14 @@ then
   #echo "INSTALL GIT"
   #yum -y install git
   echo "INSTALL VIM"
-  yum -y -y install vim
+  yum --y install vim
   echo "INSTALL TREE"
   yum -y install tree
   echo "INSTALL UNZIP"
   yum  -y install unzip curl wget
-  yum -y install perl
-  echo "INSTALL SYSSTAT"
-  yum -y install sysstat
+  #yum -y install perl
+  #echo "INSTALL SYSSTAT"
+  #yum -y install sysstat
 
 
 
